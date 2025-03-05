@@ -42,35 +42,51 @@ export const aboutData = [
       },
     ],
   },
-  // {
-  //   title: 'awards',
-  //   info: [
-  //     {
-  //       title: ' - Honoree',
-  //       stage: '2011 - 2012',
-  //     },
-  //     {
-  //       title: 'Adobe Design Achievement Awards - Finalist',
-  //       stage: '2009 - 2010',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'awards',
+    info: [
+      {
+        title: 'Webby Awards - Honoree',
+        stage: '2011 - 2012',
+      },
+      {
+        title: 'Adobe Design Achievement Awards - Finalist',
+        stage: '2009 - 2010',
+      },
+    ],
+  },
   {
     title: 'experience',
     info: [
-      { title: 'Intern - PT. PLN UITJBT', stage: 'September 2024 - January 2025' },
-      { title: 'PDD - KKNTM', stage: 'July 2024 - August 2024' },
-      { title: 'Chairman - Campus Da\'wah Organization LMA', stage: '2023 - 2024' },
-      { title: 'Secretary & Media - Ponpes Riyadlul Huda', stage: '2022 - 2024' },
+      {
+        title: 'UX/UI Designer - XYZ Company',
+        stage: '2012 - 2023',
+      },
+      {
+        title: 'Web Developer - ABC Agency',
+        stage: '2010 - 2012',
+      },
+      {
+        title: 'Intern - DEF Corporation',
+        stage: '2008 - 2010',
+      },
     ],
   },
   {
     title: 'credentials',
     info: [
-      { title: 'Information Management Diploma - Politeknik LP3I Tasikmalaya', stage: '2022 - Present' },
-      { title: 'Certified UX Designer - Online Training Program', stage: '28 Oktober 2022' },
-      { title: 'MAN 1 Tasikmalaya', stage: '2018 - 2021' },
-      { title: 'Islamic Boarding School', stage: '2014 - 2024' },
+      {
+        title: 'Web Development - ABC University, LA, CA',
+        stage: '2011',
+      },
+      {
+        title: 'Computer Science Diploma - AV Technical Institute',
+        stage: '2009',
+      },
+      {
+        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+        stage: '2006',
+      },
     ],
   },
 ];
@@ -120,7 +136,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
+            className='max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-6 px-2 xl:px-0'
           >
             I am an Information Management student skilled in web and mobile development,
             with experience in React, NodeJS, and Flutter.
@@ -135,14 +151,14 @@ const About = () => {
           >
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={1} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Years of experience
                 </div>
-              </div>
+              </div> */}
               {/* clients */}
               {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
@@ -153,14 +169,14 @@ const About = () => {
                 </div>
               </div> */}
               {/* projects */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Finished projects
                 </div>
-              </div>
+              </div> */}
               {/* awards */}
               {/* <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>

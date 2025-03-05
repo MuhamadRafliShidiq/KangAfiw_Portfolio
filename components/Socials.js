@@ -1,38 +1,40 @@
-// links
+'use client';
+
 import Link from 'next/link';
 
 // icons
 import {
   RiYoutubeLine,
   RiInstagramLine,
-  RiLinkedinBoxLine,
-  RiWhatsappLine,
-  RiTiktokLine,
-  RiGithubLine,
+  RiFacebookLine,
+  RiDribbbleLine,
+  RiBehanceLine,
+  RiPinterestLine,
 } from 'react-icons/ri';
 
 const Socials = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className='flex items-center gap-x-5 text-lg'>
-      <Link href={'https://youtube.com/@rafli_officialchannel?si=4L7cKM3L73Fi_Jvv'} className='hover:text-accent transition-all duration-300'>
+      <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>
-      <Link href={'https://www.tiktok.com/@muhamad_rafli_shidiq19?_t=8sGYbuB3w9d&_r=1'} className='hover:text-accent transition-all duration-300'>
-        <RiTiktokLine />
+      <Link href={''} className='hover:text-accent transition-all duration-300'>
+        <RiFacebookLine />
       </Link>
-      <Link href={'https://www.instagram.com/muhamadraflishidiq/profilecard/?igsh=ZjlnYXhndWdoMDg2'} className='hover:text-accent transition-all duration-300'>
+      <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
       </Link>
-      <Link href={'https://www.linkedin.com/in/muhamad-rafli-shidiq-731114269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} className='hover:text-accent transition-all duration-300'>
-        <RiLinkedinBoxLine />
+      <Link href={''} className='hover:text-accent transition-all duration-300'>
+        <RiDribbbleLine />
       </Link>
-      <Link href={'https://github.com/MuhamadRafliShidiq'} className='hover:text-accent transition-all duration-300'>
-        <RiGithubLine />
+      <Link href={''} className='hover:text-accent transition-all duration-300'>
+        <RiBehanceLine />
       </Link>
-      <Link href={'https://wa.me/6282134716388'} className='hover:text-accent transition-all duration-300'>
-        <RiWhatsappLine />
+      <Link href={''} className='hover:text-accent transition-all duration-300'>
+        <RiPinterestLine />
       </Link>
-
     </div>
   );
 };
