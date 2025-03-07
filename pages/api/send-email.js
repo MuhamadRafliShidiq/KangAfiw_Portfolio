@@ -1,3 +1,4 @@
+
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
@@ -29,5 +30,6 @@ export default async function handler(req, res) {
     } catch (error) {
         console.error('Error sending email:', error);
         res.status(500).json({ message: 'Failed to send email' });
+
     }
 }

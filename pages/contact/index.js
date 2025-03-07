@@ -1,3 +1,4 @@
+
 /* eslint-disable react/no-unescaped-entities */
 // components
 import Circles from '/components/Circles';
@@ -73,21 +74,59 @@ const Contact = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='flex-1 flex flex-col gap-6 w-full mx-auto'
+            className='flex-1 flex flex-col gap-4 w-full mx-auto'
+            onSubmit={handleSubmit}
           >
             {/* input group */}
-            <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='name' className='input' />
-              <input type='text' placeholder='email' className='input' />
+            <div className='flex flex-col sm:flex-row gap-4 w-full'>
+              <input
+                type='text'
+                name='name'
+                value={formData.name}
+                onChange={handleChange}
+                placeholder='Your name'
+                className='input text-sm sm:text-base py-2 sm:py-3 px-3 sm:px-4'
+                required
+              />
+              <input
+                type='email'
+                name='email'
+                value={formData.email}
+                onChange={handleChange}
+                placeholder='Your email'
+                className='input text-sm sm:text-base py-2 sm:py-3 px-3 sm:px-4'
+                required
+              />
             </div>
-            <input type='text' placeholder='subject' className='input' />
-            <textarea placeholder='message' className='textarea'></textarea>
-            <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
+            <input
+              type='text'
+              name='subject'
+              value={formData.subject}
+              onChange={handleChange}
+              placeholder='Subject'
+              className='input text-sm sm:text-base py-2 sm:py-3 px-3 sm:px-4'
+              required
+            />
+            <textarea
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
+              placeholder='Your message'
+              className='textarea text-sm sm:text-base py-2 sm:py-3 px-3 sm:px-4'
+              required
+            ></textarea>
+            <button
+              type='submit'
+              className='btn rounded-full border border-white/50 max-w-[140px] sm:max-w-[170px] px-6 sm:px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-sm sm:text-base py-2 sm:py-3'
+            >
               <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
                 Let's talk
               </span>
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[18px] sm:text-[22px]' />
             </button>
+
+            {/* status message */}
+            {status && <p className='mt-4 text-sm text-gray-600'>{status}</p>}
           </motion.form>
         </div>
       </div>

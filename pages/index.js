@@ -24,14 +24,14 @@ const Home = () => {
     <div className='bg-primary/60 h-full'>
       {/* text */}
       <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
-        <div className='text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto'>
+        <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
           {/* title */}
           <motion.h1
             variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1'
+            className='text-3xl lg:text-5xl font-semibold leading-[1.2] mb-4'
           >
             Muhamad Rafli Shidiq
             <br /> I am a{' '}
@@ -44,12 +44,11 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
+            className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-5 text-sm xl:text-base'
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            As a student majoring in Information Management at LP3I Polytechnic with a career interest in Web Development and UI/UX Design. He possesses strong communication skills and can interact effectively with student organization members as well as application clients.
           </motion.p>
+
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
             <ProjectsBtn />
@@ -78,7 +77,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
+          className='w-full h-full max-w-[505px] max-h-[650px] absolute -bottom-20 lg:bottom-0 lg:right-[9%]'
         >
           <Avatar />
         </motion.div>
