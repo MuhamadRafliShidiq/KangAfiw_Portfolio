@@ -93,7 +93,7 @@ const About = () => {
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-sm md:text-base'
           >
             I am an Information Management student skilled in web and mobile development,
-            with experience in React, NodeJS, and Flutter.
+            with experience in Laravel, ReactJS, NodeJS, and Flutter.
           </motion.p>
         </div>
 
