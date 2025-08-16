@@ -13,7 +13,7 @@ export const workSlider = {
       images: [
         { title: 'STI TRACK', path: '/Project1.png', link: 'https://github.com/MuhamadRafliShidiq/Aplikasi_STI' },
         { title: 'Website Desa', path: '/1.png', link: 'https://github.com/MuhamadRafliShidiq/Desa-Jatijaya' },
-        { title: 'Website LPK Amarta', path: '/4.png', link: '/projects/e-arsip' },
+        { title: 'Website LPK Amarta', path: '/4.png', link: '/projects/lpk-amarta' },
         { title: 'Rent Cars App', path: '/3.png', link: '/projects/rent-cars' },
       ],
     },
